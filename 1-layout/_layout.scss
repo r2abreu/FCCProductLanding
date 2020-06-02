@@ -46,7 +46,7 @@
 }
 
 main {
-	padding-top: 25vh;
+	padding-top: 40vh;
 	padding-left: toRem(15px);
 	padding-right: toRem(15px);
 	max-width: 60em;
@@ -54,9 +54,9 @@ main {
 
 	.l-first-section {
 		text-align: center;
+		margin: 0 auto toRem(50px);
 
 		button {
-			margin: toRem(10px) 0px;
 			display: block;
 			margin: 10px auto;
 		}
@@ -73,6 +73,11 @@ main {
 			display: flex;
 			flex-direction: row;
 
+			div {
+				margin: toRem(20px) 0;
+				padding: 0;
+			}
+
 			@media screen and (min-width: toRem(550px)) {
 				align-items: stretch;
 				div:nth-child(1) {
@@ -88,6 +93,7 @@ main {
 	}
 
 	.l-third-section {
+		margin: toRem(30px) auto;
 		text-align: center;
 		iframe {
 			max-width: 100%;
@@ -111,6 +117,19 @@ main {
 		}
 	}
 
+	@media screen and (min-width: toRem(700px)) {
+		.l-fourth-section {
+			flex-flow: row wrap;
+			justify-content: space-around;
+
+			.l-card {
+				flex: 1 1 30%;
+				margin: 0 toRem(10px);
+				margin-bottom: toRem(20px);
+			}
+		}
+	}
+
 	footer {
 		text-align: right;
 		.l-footer-menu {
@@ -122,5 +141,11 @@ main {
 				padding: toRem(5px);
 			}
 		}
+	}
+}
+
+@media screen and (min-width: toRem(700px)) {
+	main {
+		padding-top: 20vh;
 	}
 }

@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------------------- */
+/*                                   B A S E                                  */
+/* -------------------------------------------------------------------------- */
 *,
 ::before,
 ::after {
@@ -15,28 +18,13 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
-}
-
-header {
-  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-main {
-  border: 2px solid black;
-}
-
-main section {
-  border: 2px solid black;
-}
-
-footer {
-  border: 2px solid black;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -87,7 +75,7 @@ footer {
 }
 
 main {
-  padding-top: 25vh;
+  padding-top: 40vh;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   max-width: 60em;
@@ -96,10 +84,10 @@ main {
 
 main .l-first-section {
   text-align: center;
+  margin: 0 auto 3.125rem;
 }
 
 main .l-first-section button {
-  margin: 0.625rem 0px;
   display: block;
   margin: 10px auto;
 }
@@ -124,6 +112,11 @@ main .l-second-section .l-feature {
           flex-direction: row;
 }
 
+main .l-second-section .l-feature div {
+  margin: 1.25rem 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 34.375rem) {
   main .l-second-section .l-feature {
     -webkit-box-align: stretch;
@@ -141,6 +134,7 @@ main .l-second-section .l-feature {
 }
 
 main .l-third-section {
+  margin: 1.875rem auto;
   text-align: center;
 }
 
@@ -173,6 +167,24 @@ main .l-fourth-section .l-card button {
   margin-bottom: 1.25rem;
 }
 
+@media screen and (min-width: 43.75rem) {
+  main .l-fourth-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .l-fourth-section .l-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin: 0 0.625rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
 main footer {
   text-align: right;
 }
@@ -192,5 +204,74 @@ main footer .l-footer-menu {
 
 main footer .l-footer-menu .footer-link {
   padding: 0.3125rem;
+}
+
+@media screen and (min-width: 43.75rem) {
+  main {
+    padding-top: 20vh;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                M O D U L E S                               */
+/* -------------------------------------------------------------------------- */
+.nav-container {
+  background-color: #eee;
+}
+
+.nav-container h2 {
+  font-family: 'Playfair Display';
+  font-weight: lighter;
+}
+
+.nav-container .nav-menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 0.625rem;
+}
+
+.first-section h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.first-section input {
+  border: 2px solid #079992;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+}
+
+.first-section button {
+  color: black;
+  font-size: 1.25rem;
+  padding: 0.4375rem;
+  background-color: #78e08f;
+  border: none;
+  border-radius: 5px;
+}
+
+.fourth-section .card h4 {
+  background-color: #eee;
+  margin: 0;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+.fourth-section .card button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  background-color: #f1c40f;
+}
+
+.footer {
+  background: #eee;
+  padding: 0.625rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=app.css.map */

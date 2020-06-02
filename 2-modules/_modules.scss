@@ -1,0 +1,75 @@
+/* -------------------------------------------------------------------------- */
+/*                                M O D U L E S                               */
+/* -------------------------------------------------------------------------- */
+
+@import '../3-utilities/utilities';
+
+.nav-container {
+	background-color: #eee;
+	h2 {
+		font-family: 'Playfair Display';
+		font-weight: lighter;
+	}
+	.nav-menu {
+		li {
+			a {
+				text-decoration: none;
+				color: black;
+				padding: 0 toRem(10px);
+			}
+		}
+	}
+}
+
+.first-section {
+	h3 {
+		font-size: 30px;
+		font-weight: lighter;
+	}
+	input {
+		border: 2px solid #079992;
+		padding: toRem(10px);
+		border-radius: toRem(4px);
+	}
+
+	button {
+		color: black;
+		font-size: toRem(20px);
+		padding: toRem(7px);
+		background-color: #78e08f;
+		border: none;
+		border-radius: 5px;
+	}
+}
+
+.fourth-section {
+	.card {
+		h4 {
+			background-color: #eee;
+			margin: 0;
+			padding: toRem(10px);
+			font-size: toRem(20px);
+			font-weight: lighter;
+		}
+
+		button {
+			border: none;
+			border-radius: 5px;
+			padding: toRem(10px) toRem(20px);
+			background-color: #f1c40f;
+		}
+	}
+}
+
+.footer {
+	background: #eee;
+	padding: toRem(10px);
+	ul {
+		li {
+			a {
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
