@@ -17,7 +17,7 @@
 
 	h2 {
 		img {
-			width: 8%;
+			width: toRem(30px);
 		}
 	}
 
@@ -28,10 +28,29 @@
 	}
 }
 
+@media screen and(min-width: toRem(550px)) {
+	.l-nav-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.l-nav-menu {
+			padding-top: toRem(10px);
+		}
+
+		@media screen and (min-width: toRem(700px)) {
+			.l-nav-menu {
+				display: flex;
+			}
+		}
+	}
+}
+
 main {
 	padding-top: 25vh;
 	padding-left: toRem(15px);
 	padding-right: toRem(15px);
+	max-width: 60em;
+	margin: auto;
 
 	.l-first-section {
 		text-align: center;
@@ -69,6 +88,7 @@ main {
 	}
 
 	.l-third-section {
+		text-align: center;
 		iframe {
 			max-width: 100%;
 		}
